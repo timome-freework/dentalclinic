@@ -1,0 +1,258 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ヘッダー */
+header {
+  border-top: 8px solid #6CC6C4;
+}
+.header0 {
+  width: 65vw;
+  margin: 0 auto;
+  /* background-color: pink; */
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --------------------------ヘッダーleft--------------- */
+/* .header-left {
+  background-color: blue;
+} */
+
+/* --------------------------ヘッダーright--------------- */
+.header-right {
+  /* background-color: cadetblue; */
+  font-size: 30px;
+  padding: 10px 0;
+}
+.header-p {
+  font-size: .5em;
+  padding: 2% 0;
+}
+.header-p1 {
+  letter-spacing: .2em;
+}
+/* .header-p2 {
+  
+} */
+.header-p3 {
+  border: 1px solid black;
+  border-radius: 3px/3px;
+  margin: 5% 0;
+}
+.header-p4 {
+  color: red;
+}
+/* ----------------------------------ヘッダーボトム */
+.header-bottom {
+  height: 72px;
+  background: linear-gradient(to top, #dcdcdc, #fafafa);
+  /* border: 1px solid black; */
+}
+
+.header-span {
+  font-size: 10px;
+  color: rgb(92, 238, 238);
+}
+
+.top-li {
+  padding: 13px 0;
+  float: left;
+  display: block;
+  width: 193px;
+  text-align: center;
+  border: 1px solid #333;
+  border-radius: 3px/3px;
+}
+
+/* borderの重なりを無くすための設定 */
+.top-li+ li {
+  border-left: none;
+}
+
+.top-li:hover {
+  color: white;
+  background-color: #649190;
+}
+/* -----------------------ヘッター終わり */
+
+/* -----------------------メイン------------------------- */
+main {
+  width: 65vw;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+/* --------------------section1 -------------------*/
+/* --------------------一般歯科------------------- */
+.section1 {
+  width: 260px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 3px/3px;
+  margin: 20px 0;
+}
+
+/*------------------- 一般歯科,審美歯科-------------- */
+.section1 > .main-h2, .main1-h2 {
+  font-size: 16px;
+  color: white;
+  padding: 15px 10px;
+}
+/* ------------------一般歯科----------------------- */
+.main-h2 {
+  background: linear-gradient(to top, #76B5AF, #99C8C3);
+}
+/* -------------------審美歯科---------------------- */
+.main1-h2 { 
+  background: linear-gradient(to top, #AEC24C, #C0CF73);
+}
+
+.section1-ul > li > a {
+  font-size: 14px;
+  font-weight: bolder;
+  /* background-color: cadetblue; */
+  display: block;
+  padding: 15px 0;
+  border-bottom: 1px solid black;
+}
+
+.section1-ul > li > a:hover {
+  color: #6CC6C4;
+}
+
+.section1-ul {
+  padding: 0 10px 30px;
+}
+
+/* ◇ひし形 */
+.section1-ul > li {
+  
+  text-align: left;
+
+  position: relative;
+}
+.section1-ul > li::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: .5em;
+  left: -1em;
+  width: 6px;
+  height: 6px;
+  background-color: #3498db;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+.section-h2 {
+  background-color: blueviolet;
+}
+
+/* ---------main2----------------section2 */
+.main2 {
+  width: 70%;
+  margin: 20px 0; 
+}
+
+/* .section2 {
+  background-color: cornflowerblue;
+} */
+
+/* ----------------------------------section3 */
+.section3 {
+  padding: 0 20px 50px;
+  background-color: white;
+}
+
+.section3-h3 {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 3px solid #6CC6C4;
+}
+
+.section3-li {
+  font-size: 13px;
+  padding: 0 20px;
+}
+
+.section3-center {
+  height: 58px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section3-dt {
+  width: 25%;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.section3-dd {
+  width: 75%;
+}
+/* メイン終わり */
+
+/* フッター */
+footer {
+  width: 65vw;
+  margin: 0 auto;
+  /* background-color: burlywood; */
+}
+.footer {
+  /* width: 70%; */
+  height: 2em;
+  color: whtie;
+  background-color: #6CC6C4;
+  border-radius: 10px;
+
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+.footer-li {
+  font-size: 13px;
+  width: 15%;
+  text-align: center;
+}
+
+.adress, .copy {
+  height: 4em;
+  line-height: 4em;
+}
+
+.adress {
+  text-align: right;
+  border-bottom: 3px solid #6CC6C4;
+}
+
+.copy {
+  text-align: center;
+}
+/* フッター終わり */
+
+/* レスポンシブデザイン */
+
