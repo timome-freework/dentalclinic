@@ -79,7 +79,7 @@ header {
   display: block;
   width: 193px;
   text-align: center;
-  border: 1px solid #333;
+  border: 2px solid rgb(212, 198, 178);
   border-radius: 3px/3px;
 }
 
@@ -145,7 +145,7 @@ main {
 }
 
 /* ◇ひし形 */
-.section1-ul > li {
+/* .section1-ul > li {
   
   text-align: left;
 
@@ -163,7 +163,7 @@ main {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   box-sizing: border-box;
-}
+} */
 
 .section-h2 {
   background-color: blueviolet;
@@ -195,6 +195,10 @@ main {
   font-size: 13px;
   
   padding: 0 20px;
+}
+
+.material-icons {
+  font-size: 30px;
 }
 
 .section3-center {
